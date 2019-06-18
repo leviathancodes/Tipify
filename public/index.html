@@ -18,35 +18,36 @@
     <h1>Tipify!</h1>
       <h4 class="headline">Calculate your tips with ease.</h4>
     <hr>
-<form>
-  <p>How much is your bill?</p>
-  <p>
-  $ <input type="number" id="bill" class="bill-price" placeholder="Enter bill">
-  </p>
+  <form>
+    <p>How much is your bill?</p>
+    <p>
+    $ <input type="number" id="bill" class="bill-price" placeholder="Enter bill">
+    </p>
 
-  <p>How was your service?</p>
+    <p>How was your service?</p>
+    
+    <select id='tips' class="service-rating">
+    
+      <option value='1'>Bad - 5%</option>
+      <option value='2'>Underwhelming - 10%</option>
+      <option value='3' selected>Good - 15%</option>
+      <option value='4'>Great - 20%</option>
+      <option value='5'>Excellent - 30%</option>
+
+    </select>
+
+    <p>How many people are sharing the bill?</p>
+    <input type="number" class="share-bill" min="1" id='people'>
   
-  <select id='tips' class="service-rating">
-  
-    <option value='1'>Bad - 5%</option>
-    <option value='2'>Underwhelming - 10%</option>
-    <option value='3' selected>Good - 15%</option>
-    <option value='4'>Great - 20%</option>
-    <option value='5'>Excellent - 30%</option>
+    <input type="button" type="button" class="calculate" onclick="tip()" value="Calculate!" id="calculate">
 
-  </select>
-
-  <p>How many people are sharing the bill?</p>
-  <input type="number" class="share-bill" min="1" id='people'>
- 
-  <input type="button" type="button" class="calculate" onclick="tip()" value="Calculate!" id="calculate">
-
-  <input type="button" type="button" class='reset' value='Reset' onclick="reset()" id="reset">
- 
-
+    <input type="button" type="button" class='reset' value='Reset' onclick="reset()" id="reset">
 </form>
 <h4 id="finalCalculation"></h4>
 </div>
+<footer>
+  <p class="footer-text">Created by Lance Huddleston II</p>
+</footer>
 
 <script src="/js/index.js"></script>
   </body>
