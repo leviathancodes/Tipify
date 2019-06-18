@@ -1,0 +1,27 @@
+{
+  "name": "tipify",
+  "version": "1.0.0",
+  "description": "Tipify is a JavaScript application that suggests the best price to tip your waiter.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "nodemon server.js -e js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lhuddlesto/Tipify.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lhuddlesto/Tipify/issues"
+  },
+  "homepage": "https://github.com/lhuddlesto/Tipify#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  }
+}
